@@ -159,6 +159,7 @@ strong {
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.278);
 }
 .fixar {
+  width: 100%;
   position: fixed;
   top: 0;
 }
