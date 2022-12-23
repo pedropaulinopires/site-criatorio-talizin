@@ -31,7 +31,7 @@ header {
   width: 200px;
 }
 nav {
-  width: 90.7%;
+  max-width: 100%;
   padding: 19px;
   background-color: var(--cor1);
   height: 20px;
