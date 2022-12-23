@@ -260,3 +260,6 @@ footer a:hover {
 .scrollTop.active {
   opacity: 1;
 }
+img.icones{
+  border-radius: 50%;
+}
