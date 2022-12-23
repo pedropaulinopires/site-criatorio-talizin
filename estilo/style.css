@@ -15,10 +15,10 @@
   margin: 0;
   padding: 0;
 }
-body.scroll{
-    scroll-behavior: smooth;
+body.scroll {
+  scroll-behavior: smooth;
 }
-body{
+body {
   font-family: var(--fonte-padrao);
   margin: 0px;
   padding: 0px;
@@ -32,7 +32,8 @@ header {
 }
 nav {
   max-width: 100%;
-  padding: 19px;
+  padding-top: 19px;
+  padding-bottom: 19px;
   background-color: var(--cor1);
   height: 20px;
   position: sticky;
@@ -159,8 +160,7 @@ strong {
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.278);
 }
 .fixar {
-  width:100%;
-  text-align: center;
+  width: 100%;
   position: fixed;
   top: 0;
 }
@@ -258,6 +258,5 @@ footer a:hover {
   color: var(--cor4);
 }
 .scrollTop.active {
-  
   opacity: 1;
 }
