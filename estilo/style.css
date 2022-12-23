@@ -114,7 +114,7 @@ main p {
 }
 #img2 {
   background-image: url(../imagens/canario3.jpg);
-  background-size: 100% ;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
