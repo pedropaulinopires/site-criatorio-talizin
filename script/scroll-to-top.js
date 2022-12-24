@@ -2,7 +2,7 @@ const toTop= document.querySelector(".scrollTop");
 const body = document.getElementsByTagName('body')[0];
 
 window.addEventListener("scroll",() =>{
-    if (window.pageYOffset > 250) {
+    if (window.pageYOffset > 500) {
         toTop.classList.add("active");
         body.classList.add("scroll");
     } else {

@@ -90,7 +90,6 @@ main p {
   background-image: url(../imagens/canario-net5.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: center;
   height: 90vh;
   box-shadow: inset 0px -1px 20px black;
@@ -100,7 +99,9 @@ main p {
 }
 .conteudo1 p {
   text-align: justify;
-  text-indent: 100px;
+  width: 50vw;
+  margin: auto;
+  text-indent: 25px;
   padding-left: 25px;
   padding-right: 25px;
   line-height: 2.5em;
@@ -147,6 +148,8 @@ strong {
   text-align: center;
   font-family: var(--font-destaque);
   font-size: 3.5em;
+  padding-left: 25px;
+  padding-right: 25px;
   padding-bottom: 55px;
   text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 }
@@ -203,6 +206,7 @@ span {
 }
 div.contato {
   text-align: center;
+  padding-bottom: 30px;
 }
 div.contato img {
   width: clamp(1.75em, 1em + 3vw, 2.5em);
