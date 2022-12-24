@@ -15,14 +15,13 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-}
-body.scroll {
-  scroll-behavior: smooth;
+  position: relative;
 }
 body {
   font-family: var(--fonte-padrao);
   margin: 0px;
   padding: 0px;
+  display: block;
 }
 header {
   text-align: center;
