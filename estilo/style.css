@@ -14,6 +14,7 @@
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 body.scroll {
   scroll-behavior: smooth;
@@ -38,6 +39,7 @@ nav {
   height: 20px;
   position: sticky;
   top: 0;
+  bottom: 0;
   z-index: 9999;
   text-align: center;
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.538);
@@ -50,6 +52,12 @@ nav a {
   transition-duration: 0.5s;
   padding: 10px;
   margin-right: 5px;
+}
+.fixar{
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  margin-bottom: 0;
 }
 nav a:hover {
   color: var(--cor5);
@@ -164,11 +172,7 @@ strong {
   border: 2px solid black;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.278);
 }
-.fixar {
-  width: 100%;
-  position: fixed;
-  top: 0;
-}
+
 span {
   margin-left: 15px;
   margin-right: auto;

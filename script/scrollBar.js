@@ -6,7 +6,7 @@ window.onscroll = function(){
 }
 
 function fixarMenuNoTopo(){
-    if (window.pageYOffset >= (topoNav +50)) {
+    if (window.pageYOffset > (topoNav+100) ) {
         nav.classList.add("fixar");
     } else {
         nav.classList.remove("fixar");    
