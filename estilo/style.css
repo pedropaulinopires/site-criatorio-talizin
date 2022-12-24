@@ -119,16 +119,16 @@ main p {
 }
 #img2 {
   background-image: url(../imagens/canario3.jpg);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: center center;
-  padding: 50%;
-  box-shadow: inset 0px -1px 20px black;
-  margin-bottom: 55px;
+  background-size: cover;
+  background-position: center;margin: auto;
+  max-width: 800px;
+  height: 1000px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.586);
 }
 #container2 {
-  height: 100%;
-  width: 100%;
+
   background-image: radial-gradient(
     circle at center,
     rgba(0, 0, 0, 0.018),
@@ -157,7 +157,7 @@ strong {
   text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 }
 #passarinho {
-  width: 30%;
+  width: 40%;
   height: 30%;
   border-radius: 10px;
   margin-bottom: 25px;
@@ -174,7 +174,7 @@ span {
   margin-right: auto;
 }
 .canarios {
-  display: block;
+  display: inline-block;
   text-align: center;
   margin-bottom: 35px;
 }
