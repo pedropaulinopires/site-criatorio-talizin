@@ -117,9 +117,8 @@ main p {
   background-image: url(../imagens/canario3.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: center center;
-  height: 90vh;
+  padding: 50%;
   box-shadow: inset 0px -1px 20px black;
   margin-bottom: 55px;
 }
@@ -178,9 +177,9 @@ span {
   background-image: url(../imagens/canario-net2.jpg);
   background-size: 1500px 1500px;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+ 
   background-position: center;
-  height: 90vh;
+ 
   box-shadow: inset 0px -1px 20px black;
   margin-bottom: 55px;
 }
