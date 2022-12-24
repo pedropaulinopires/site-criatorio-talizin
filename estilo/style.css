@@ -99,7 +99,8 @@ main p {
 }
 .conteudo1 p {
   text-align: justify;
-  width: 50vw;
+  max-width: 800px;
+  min-width: 100px;
   margin: auto;
   text-indent: 25px;
   padding-left: 25px;
