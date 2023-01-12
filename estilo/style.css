@@ -67,6 +67,7 @@ nav a:hover {
   border-radius: 8px;
 }
 
+
 h1 {
   font-family: var(--font-destaque);
   color: var(--cor5);
@@ -95,13 +96,21 @@ main p {
     rgba(0, 0, 0, 0.601)
   );
 }
+@media screen and (orientation:landscape) and (max-width:600px) {
+  #container1{
+    height: 900px;
+  }
+  h1{
+    top: -150px;
+  }
+}
 #container1 {
   text-align: center;
   background-image: url(../imagens/canario-net5.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 90vh;
+  height: 500px;
   box-shadow: inset 0px -1px 20px black;
 }
 #inicio h1 {
