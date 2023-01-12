@@ -137,10 +137,16 @@ main p {
   padding-bottom: 55px;
   text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 }
+@media screen and (max-width: 1000px) {
+  #img2{
+   width: 90vw;
+  }
+}
 #img2 {
   background-image: url(../imagens/canario3.jpg);
   background-size: cover;
-  background-position: center;margin: auto;
+  background-position: center;
+  margin: auto;
   max-width: 800px;
   height: 1000px;
   margin-bottom: 30px;
