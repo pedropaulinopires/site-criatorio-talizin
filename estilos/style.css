@@ -1,0 +1,297 @@
+@charset "UTF-8";
+/* imports das fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+
+/* versão mobile first*/
+/* difinindo as fontes e paletas de cores*/
+:root {
+  --font_padrao: Arial, Helvetica, sans-serif;
+  --font_links: "Open Sans", sans-serif;
+  --font_destaque: "Courgette", cursive;
+  --vermelho: #bf1b39;
+  --amarelo-claro: #f2dc6d;
+  --amarelo-escuro: #b7a05a;
+  --marrom: #685e30;
+}
+
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font_padrao);
+  box-sizing: border-box;
+}
+
+/*Configurações de cabeçalho*/
+
+header#menu_grande{
+  display: none;
+}
+
+header {
+  background-color: var(--amarelo-escuro);
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.261);
+}
+
+
+img#logo {
+  width: 160px;
+  margin-top: 50px;
+}
+
+div#tela_grande {
+  display: none;
+}
+
+div#mobile {
+  text-align: center;
+  z-index: 9;
+}
+span#closebnt{
+  display: block;
+  color: var(--marrom);
+  font-size: 2.5em;
+  cursor: pointer;
+}
+span#closebnt:hover{
+  color: #342f19;
+  cursor: pointer;
+}
+span#closebnt:active{
+  color: #342f19;
+  cursor: pointer;
+}
+span#openbnt{
+  display: block;
+  color: var(--marrom);
+  cursor: pointer;
+  font-size: 2.5em;
+}
+span#openbnt:hover{
+  color: #342f19;
+  cursor: pointer;
+}
+span#openbnt:active{
+  color: #342f19;
+  cursor: pointer;
+}
+.overlay{
+  width: 100%;
+  height: 0;
+  background-color: var(--amarelo-escuro);
+  z-index: 9;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-y: hidden;
+  transition: all .5s;
+}
+
+.overlay a{
+  padding: 50px;
+  text-decoration: none;
+  color: white;
+  display: block;
+  font-size: 1.8em;
+  transition: .3s;
+}
+
+.overlay a:hover, .overlay a:focus{
+  color: var(--marrom);
+}
+
+
+
+main {
+  max-width: 800px;
+  min-width: 100px;
+  margin: auto;
+}
+/*seção do home */
+strong {
+  color: var(--marrom);
+  font-weight: bold;
+}
+
+section#home {
+ background-image: url(../imagens/canario-net5.jpg);
+ background-size: cover;
+ background-position: center center;
+ background-repeat: no-repeat;
+ height: 80vh;
+ box-shadow: inset 0px 10000px 1000px rgba(0, 0, 0, 0.25);
+}
+section#home h1 {
+  font-family: var(--font_destaque);
+  font-size: 5em;
+  font-weight: bolder;
+  color: white;
+  position: relative;
+  top: 170px;
+  text-align: center;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.571);
+
+}
+/*--------------------------*/
+
+/*seção de info*/
+h1,
+h2 {
+  color: var(--marrom);
+  font-family: var(--font_destaque);
+}
+
+h2 {
+  text-align: center;
+  margin-top: 35px;
+  font-size: 3em;
+  padding: 15px;
+}
+
+section#desc h2 {
+}
+p {
+  margin-top: 30px;
+  text-align: justify;
+  text-indent: 20px;
+  line-height: 2em;
+  font-size: 1.3em;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/*--------------------------*/
+
+/*section de imagem da gaiola*/
+section#gaiola {
+  text-align: center;
+}
+section#gaiola img {
+  margin-top: 30px;
+  width: 90%;
+  
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.33);
+  border: 1px solid black;
+}
+/*--------------------------*/
+
+/*section canarios */
+section#canarios{
+    text-align: center;
+}
+section#canarios p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+span#canarinho img {
+  height: 100%;
+  width: 80%;
+  display: inline;
+  margin-bottom: 30px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.368);
+}
+/*---------------------------*/
+
+/*section contato*/
+#img_grande{
+  display: none;
+}
+section#contato{
+    background-image: url(../imagens/canario-net2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 80vh;
+    box-shadow: inset 1000px 110px 10000px rgba(0, 0, 0, 0.486);
+}
+section#contato h2{
+    padding-top: 25px;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+}
+ul {
+  list-style-type: block;
+}
+
+li {
+  padding: 20px;
+}
+
+ul#lista_contato{
+  margin-top: 30px;
+  list-style-type: none;
+  display: block;
+  text-align: center;
+}
+ul#lista_contato li{
+  display: block;
+}
+
+
+ul#lista_contato img:hover, ul#lista_contato img:focus{
+  transform: translate(-5px);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.289);
+  transition: all .5s;
+}
+ul#lista_contato img{
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.557);
+  border-radius: 20%;
+  transition: all .5s;
+}
+/*-----------------------------*/
+
+/*rodapé*/
+footer{
+    background-color: var(--amarelo-escuro);
+    color: white;
+    font-family: var(--font_links);
+    font-weight: bolder;
+}
+footer p {
+    font-size: 0.8em;
+    margin-top: 0;
+    text-indent: 0;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--marrom);
+}
+footer a:hover, footer a:focus{
+    text-decoration: none;
+    color:  #403a1e;
+}
+/*-------------------------*/
+/*scroll para o topo*/
+
+.scrollTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 15px;
+    background-color: var(--marrom);
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+    opacity: 0;
+    font-weight: bolder;
+  }
+  .scrollTop:hover {
+    transition: all 0.5s ease 0s;
+    background-color: var(--amarelo-claro);
+    color: var(--marrom);
+  }
+  .scrollTop.active {
+    opacity: 1;
+  }
+  /*-----------------------------*/

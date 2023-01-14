@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+/* Medium devices (landscape tablets, 768px and up) */
+:root {
+    --font_padrao: Arial, Helvetica, sans-serif;
+    --font_links: "Open Sans", sans-serif;
+    --font_destaque: "Courgette", cursive;
+    --vermelho: #bf1b39;
+    --amarelo-claro: #f2dc6d;
+    --amarelo-escuro: #b7a05a;
+    --marrom: #685e30;
+  }
+
+@media screen and (min-width: 768px) {
+  div#tela_grande {
+    display: block;
+    text-align: center;
+    transform: translateY(-25px);
+  }
+  div#mobile {
+    display: none;
+  }
+  header#menu_mobile{
+    display: none;
+  }
+  header#menu_grande{
+    display: block;
+    background-color: var(--amarelo-escuro);
+    position: sticky;
+    top: 0;
+    padding: 20px;
+  }
+  header#menu_grande a{
+    color: white;
+    font-family: var(--font_links);
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 30px;
+    transition: all .3s;
+  }
+  header#menu_grande a:hover, header#menu_grande a:focus{
+   color: var(--marrom);
+   transition: .3s;
+  }
+ 
+  a#link:hover {
+    color: var(--marrom);
+  }
+  span#canarinho img {
+    width: 40%;
+    margin-right: 25px;
+  }
+
+  ul#lista_contato {
+    display: inline-block;
+    position: absolute;
+    left: 90%;
+    transition: all .3s
+  }
+
+  ul#lista_contato li:hover{
+    transform: translate(-5px);
+    transition: all .3s;
+  }
+  img#img_grande{
+    display: inline;
+    position: relative;
+    width: 250px;
+    border-radius: 50%;
+    left: 35%;
+    top: 10%;
+
+  }
+  footer p {
+    font-size: 1em;
+    transition: all .3s;
+  }
+  footer a:hover{
+    color: #3d371c;
+    transition: all .3s;
+  }
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  body {
+    overflow-x: hidden;
+  }
+  
+  section#canarios {
+    width: 100vw;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-49%, 0);
+  }
+
+  span#canarinho img {
+    width: 30%;
+    margin-right: 25px;
+  }
+
+  section#home {
+    background-attachment: fixed;
+  }
+
+  section#contato {
+    background-attachment: fixed;
+  }
+  img#img_grande{
+    display: inline;
+    position: relative;
+    width: 250px;
+    border-radius: 50%;
+    left: 40%;
+    top: 10%;
+
+  }
+}

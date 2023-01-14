@@ -10,3 +10,7 @@ window.addEventListener("scroll",() =>{
         body.classList.remove("scroll");
     }
 })
+
+function scrollToTop() {
+    window.scrollTo(0, 0);
+  }
