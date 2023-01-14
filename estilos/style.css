@@ -303,6 +303,11 @@ ul#lista_contato img {
   }
 }
 
+a:active{
+    color: var(--marrom);
+    transition:all .3s;
+  }
+
 /*-----------------------------*/
 
 /*rodapé*/

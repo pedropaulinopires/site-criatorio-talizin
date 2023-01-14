@@ -19,10 +19,6 @@
     text-align: center;
     transform: translateY(-25px);
   }
-  a:active{
-    color: var(--marrom);
-    transition:all .3s;
-  }
   div#mobile {
     display: none;
   }
