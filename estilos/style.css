@@ -27,6 +27,12 @@ body,html{
   font-family: var(--font_padrao);
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
+}
+input,textarea,a,div,span,button,select{
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:hover,a:focus,a:active{
   outline: none;
 }
 
