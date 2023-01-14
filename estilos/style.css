@@ -248,6 +248,12 @@ ul#lista_contato img {
 
 /*todos os hovers*/
 @media (hover:hover) and (pointer: fine) {
+
+  .scrollTop:hover {
+  transition: all 0.5s ease 0s;
+  background-color: var(--amarelo-claro);
+  color: var(--marrom);
+}
   footer a:hover{
     color: #3d371c;
     transition: all .3s;
@@ -338,7 +344,8 @@ footer a:focus {
   opacity: 0;
   font-weight: bolder;
 }
-.scrollTop:hover {
+
+.scrollTop:active {
   transition: all 0.5s ease 0s;
   background-color: var(--amarelo-claro);
   color: var(--marrom);
