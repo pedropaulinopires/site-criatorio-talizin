@@ -53,26 +53,12 @@
     margin-right: 25px;
   }
 
-  ul#lista_contato {
-    display: inline-block;
-    position: absolute;
-    left: 90%;
-    transition: all .3s
-  }
 
-  ul#lista_contato li:hover{
+  ul#lista_contato a:hover{
     transform: translate(-5px);
     transition: all .3s;
   }
-  img#img_grande{
-    display: inline;
-    position: relative;
-    width: 250px;
-    border-radius: 50%;
-    left: 35%;
-    top: 10%;
-
-  }
+  
   footer p {
     font-size: 1em;
     transition: all .3s;
@@ -111,13 +97,5 @@
   section#contato {
     background-attachment: fixed;
   }
-  img#img_grande{
-    display: inline;
-    position: relative;
-    width: 250px;
-    border-radius: 50%;
-    left: 40%;
-    top: 10%;
-
-  }
+  
 }

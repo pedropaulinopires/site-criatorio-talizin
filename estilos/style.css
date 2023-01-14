@@ -32,9 +32,7 @@ input,textarea,a,div,span,button,select{
   -webkit-tap-highlight-color:#00000000 ;
 }
 
-a:hover,a:focus,a:active{
-  outline: none;
-}
+
 
 
 
@@ -73,10 +71,7 @@ span#closebnt{
   font-size: 2.5em;
   cursor: pointer;
 }
-span#closebnt:hover{
-  color: #342f19;
-  cursor: pointer;
-}
+
 span#closebnt:active{
   color: #342f19;
   cursor: pointer;
@@ -87,10 +82,7 @@ span#openbnt{
   cursor: pointer;
   font-size: 2.5em;
 }
-span#openbnt:hover{
-  color: #342f19;
-  cursor: pointer;
-}
+
 span#openbnt:active{
   color: #342f19;
   cursor: pointer;
@@ -116,10 +108,6 @@ span#openbnt:active{
   transition: .3s;
 }
 
-.overlay a:hover, .overlay a:focus{
-  color: var(--marrom);
-}
-
 
 
 main {
@@ -139,6 +127,7 @@ section#home {
  background-position: center center;
  background-repeat: no-repeat;
  height: 80vh;
+ padding-top: 25vh;
  box-shadow: inset 0px 10000px 1000px rgba(0, 0, 0, 0.25);
 }
 section#home h1 {
@@ -146,8 +135,6 @@ section#home h1 {
   font-size: 5em;
   font-weight: bolder;
   color: white;
-  position: relative;
-  top: 170px;
   text-align: center;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.571);
 
@@ -250,16 +237,47 @@ ul#lista_contato li{
 }
 
 
-ul#lista_contato img:hover, ul#lista_contato img:active{
-  transform: translate(-5px);
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.289);
-  transition: all .5s;
-}
+
 ul#lista_contato img{
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.557);
   border-radius: 20%;
   transition: all .5s;
+  width: 5vw;
 }
+
+/*todos os hovers*/
+@media (hover:hover) and (pointer:fine) {
+
+  a:hover,a:focus,a:active{
+  outline: none;
+}
+
+  span#closebnt:hover{
+  color: #342f19;
+  cursor: pointer;
+}
+
+
+  span#openbnt:hover{
+    color: #342f19;
+    cursor: pointer;
+  }
+
+
+  .overlay a:hover, .overlay a:focus{
+    color: var(--marrom);
+  }
+  
+
+
+  ul#lista_contato img:hover, ul#lista_contato img:active{
+    transform: translate(-5px);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.289);
+    transition: all .5s;
+  }
+  
+}
+
 /*-----------------------------*/
 
 /*rodapé*/
