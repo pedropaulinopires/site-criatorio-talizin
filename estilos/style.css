@@ -243,7 +243,7 @@ ul#lista_contato li{
 }
 
 
-ul#lista_contato img:hover, ul#lista_contato img:focus{
+ul#lista_contato img:hover, ul#lista_contato img:active{
   transform: translate(-5px);
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.289);
   transition: all .5s;
