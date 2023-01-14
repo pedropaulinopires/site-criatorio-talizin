@@ -22,9 +22,15 @@
   padding: 0;
   font-family: var(--font_padrao);
   box-sizing: border-box;
-  -webkit-tap-highlight-color: #3d371c00;
+  -webkit-tap-highlight-color: #00000000;
+}
+input,textarea,button,span,div,a,select{
+  -webkit-tap-highlight-color: #00000000;
 }
 
+a:focus,a:visited,a:active{
+  outline: none;
+}
 /*Configurações de cabeçalho*/
 
 header#menu_grande{
