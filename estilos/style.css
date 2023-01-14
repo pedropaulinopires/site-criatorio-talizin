@@ -27,6 +27,7 @@ body,html{
   font-family: var(--font_padrao);
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
+  outline: none;
 }
 
 
