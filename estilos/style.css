@@ -110,6 +110,10 @@ span#openbnt:active {
   transition: 0.3s;
 }
 
+.overlay a:active {
+  color: var(--marrom);
+  transition: 0.3s;
+}
 main {
   max-width: 800px;
   min-width: 100px;
