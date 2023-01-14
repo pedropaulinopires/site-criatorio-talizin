@@ -227,7 +227,7 @@ li {
 }
 
 ul#lista_contato{
-  margin-top: 30px;
+  margin-top: -5px;
   list-style-type: none;
   display: block;
   text-align: center;
@@ -242,7 +242,7 @@ ul#lista_contato img{
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.557);
   border-radius: 20%;
   transition: all .5s;
-  width: 5vw;
+  width: 13vh;
 }
 
 /*todos os hovers*/
