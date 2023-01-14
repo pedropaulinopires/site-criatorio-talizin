@@ -40,33 +40,22 @@
     margin-right: 30px;
     transition: all .3s;
   }
-  header#menu_grande a:hover, header#menu_grande a:focus{
-   color: var(--marrom);
-   transition: .3s;
-  }
+
  
-  a#link:hover {
-    color: var(--marrom);
-  }
+ 
   span#canarinho img {
     width: 40%;
     margin-right: 25px;
   }
 
 
-  ul#lista_contato a:hover{
-    transform: translate(-5px);
-    transition: all .3s;
-  }
+ 
   
   footer p {
     font-size: 1em;
     transition: all .3s;
   }
-  footer a:hover{
-    color: #3d371c;
-    transition: all .3s;
-  }
+  
 
 
 }
