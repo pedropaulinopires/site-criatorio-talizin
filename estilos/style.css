@@ -102,12 +102,32 @@ span#openbnt:active {
 }
 
 .overlay a {
-  padding: 50px;
+  padding: 7vh;
   text-decoration: none;
   color: white;
   display: block;
   font-size: 1.8em;
   transition: 0.3s;
+}
+
+@media screen and (orientation: landscape) {
+  .overlay a {
+    padding-bottom: 15vh;
+
+  }
+  #optLandscape {
+    display: block;
+    float: left;
+    margin-left: 15%;
+  }
+  #optLandscape a{
+    display: block;
+  }
+  .overlay-content{
+    text-align: center;
+    padding-top: 1rem;
+  }
+  
 }
 
 .overlay a:active {
@@ -244,7 +264,7 @@ ul{
 }
 li{
   display: block;
-  margin: 3rem;
+  margin-bottom: 5rem;
   
 }
 ul p{
