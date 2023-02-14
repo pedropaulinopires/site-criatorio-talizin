@@ -213,38 +213,53 @@ section#contato {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 80vh;
+  height: 700px;
   box-shadow: inset 1000px 110px 10000px rgba(0, 0, 0, 0.486);
+  overflow: hidden;
+}
+section div#contato-header{
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid darkgray;
 }
 section#contato h2 {
-  padding-top: 25px;
+  padding-top: 1rem;
   color: white;
   text-shadow: 0px 0px 10px black;
 }
-ul {
-  list-style-type: block;
+section div#contato-body img{
+  transition: all .3s;
 }
-
-li {
-  padding: 20px;
-}
-
-ul#lista_contato {
-  margin-top: -5px;
-  list-style-type: none;
+section div#contato-body{
   display: block;
+  padding: 1rem;
+}
+
+ul{
+  padding: 1rem;
+  margin: 1rem;
+  display: inline;
   text-align: center;
+  list-style-type: none;
 }
-ul#lista_contato li {
+li{
   display: block;
+  margin: 3rem;
+  
+}
+ul p{
+  display: inline;
+  transition: all .3s;
+}
+section div#contato-body a{
+  text-decoration: none;
+  color: rgb(248, 248, 248);
+  font-weight: 700;
+  text-shadow: 0px 0px 10px black;
+  font-size: 1.2rem;
 }
 
-ul#lista_contato img {
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.557);
-  border-radius: 20%;
-  transition: all 0.5s;
-  width: 12vw;
-}
+
 
 /*todos os hovers*/
 @media (hover:hover) and (pointer: fine) {
@@ -290,6 +305,10 @@ ul#lista_contato img {
     cursor: pointer;
   }
 
+  section#contato p:hover{
+    color: var(--marrom);
+    transition: all .3s;
+  }
   .overlay a:hover,
   .overlay a:focus {
     color: var(--marrom);
@@ -303,7 +322,7 @@ ul#lista_contato img {
   }
 }
 
-a:active{
+a:active,section#contato p:active{
     color: var(--marrom);
     transition:all .3s;
   }
@@ -318,7 +337,7 @@ footer {
   font-weight: bolder;
 }
 footer p {
-  font-size: 0.8em;
+  font-size:1rem;
   margin-top: 0;
   text-indent: 0;
   text-align: center;

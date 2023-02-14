@@ -40,12 +40,12 @@
     margin-right: 30px;
     transition: all .3s;
   }
+  section#contato {
+    height: 600px;
+  }
 
-  ul#lista_contato img {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.557);
-    border-radius: 20%;
-    transition: all 0.5s;
-    width: 15vh;
+  section#canarios{
+    padding-left: 2.5rem;
   }
  
  
@@ -77,6 +77,7 @@
     position: relative;
     top: 50%;
     left: 50%;
+    padding-left: 0rem;
     transform: translate(-49%, 0);
   }
 
@@ -85,12 +86,5 @@
     margin-right: 25px;
   }
 
-  section#home {
-    background-attachment: fixed;
-  }
-
-  section#contato {
-    background-attachment: fixed;
-  }
   
 }
