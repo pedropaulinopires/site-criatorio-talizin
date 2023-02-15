@@ -286,6 +286,9 @@ section div#contato-body a{
   font-size: 1.2rem;
 }
 
+li img{
+  border-radius: 10px;
+}
 
 
 /*todos os hovers*/
