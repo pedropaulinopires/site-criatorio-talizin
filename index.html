@@ -5,19 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
-    
-    <!--estilo para mobile first-->
     <link rel="stylesheet" href="estilos/style.css" />
     <link rel="stylesheet" href="estilos/media-querie.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
-    />
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.js"></script>
     <title>Criatório Talizin</title>
   </head>
-  <!--colocar onresize="menu()"-->
   <body>
     <!--cabeçalho do site onde contem o menu e a imagem de logo-->
     <div id="tela_grande">
@@ -26,6 +19,8 @@
         -->
       <img id="logo" src="imagens/logo-canario.jpg" alt="logo_criatório" />
     </div>
+
+    <!--menu normal-->
     <div id="h"></div>
     <header id="menu_grande">
       <a id="link" href="#h" >Home</a>
@@ -33,6 +28,9 @@
       <a id="link"  href="#co">Contato</a>
       <a id="link"  href="https://www.youtube.com/@marcelotalizin" target="_blank" rel="external" >Canal</a>
     </header>
+    <!--fim menu normal-->
+
+    <!--menu mobile-->
     <header  id="menu_mobile">
       <div id="myNav" class="overlay">
         <!--BOTÃO DE FECHAR -->
@@ -54,20 +52,28 @@
         menu
         </span>
     </header>
-    <!--srcoll para o home-->
+    <!--fim menu mobile-->
+
+    <!--img grande-->
     <div id="mobile">
       <!--imagem de logo que so aparece
         em dispositivos maiores
         -->
       <img id="logo" src="imagens/logo-canario.jpg" alt="logo_criatório" />
     </div>
+
     <!--home-->
     <section  id="home" class="home">
       <div id="homeBack">
         <h1 class="rellax" data-rellax-speed="-1">Home</h1>
       </div>
     </section>
+    <!--fim home-->
+
+    <!--sessao main-->
     <main>
+
+      <!--sessao descricao-->
       <section id="desc">
         <h2 class="rellax" data-rellax-speed="-0.3" >Início do Criatório Talizin</h2>
         <p class="rellax" data-rellax-speed="-0.1">
@@ -80,10 +86,14 @@
           para a reprodução, buscando o padrão desejado.
         </p>
       </section>
+       <!--fim sessao descricao-->
+
       <!--foto da gaiola-->
       <section id="gaiola">
         <img  src="imagens/canario3.jpg" alt="canario" />
       </section>
+      
+      <!--sessao canarios-->
       <div id="c"></div>
       <section id="canarios">
         <h2 >Canários</h2>
@@ -111,7 +121,11 @@
           <img src="imagens/passaro1.jpg" alt="passaro" />
         </span>
       </section>
+      <!-- fim sessao canarios-->
     </main>
+    <!--fim sessao main-->
+
+    <!--sessao contato-->
     <div id="co"></div>
     <section id="contato">
       <div id="contatoBack">
@@ -139,9 +153,15 @@
         </div>
       </div>
     </section>
+    <!--fim sessao contato-->
+
+    <!--rodape-->
     <footer id="rodape">
         <p>Site criado por <a href="https://www.instagram.com/pedropaulinopires/" target="_blank" rel="external">Pedro Henrique </a>para os estudos</p>
     </footer>
+    <!-- fim rodape-->
+
+    <!--scroll to top-->
     <div
       style="font-weight: 800; font-size: 1em"
       onclick="scrollToTop()"
@@ -151,8 +171,10 @@
       expand_less
       </span>
     </div>
-    <script src="scripts/scrollReveal.js"></script>
-    
+    <!--fim do Scroll to top-->
+
+    <!--scripts js-->
+    <script src="scripts/parallax.js"></script>
     <script src="scripts/scrollTop.js"></script>
     <script src="scripts/nav.js"></script>
   </body>
