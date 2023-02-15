@@ -44,6 +44,10 @@
     height: 600px;
   }
 
+  div#contatoBack{
+    height: 600px;
+  }
+
   section#canarios{
     padding-left: 2.5rem;
   }

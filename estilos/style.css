@@ -127,6 +127,7 @@ span#openbnt:active {
     text-align: center;
     padding-top: 1rem;
   }
+
   
 }
 
@@ -150,9 +151,13 @@ section#home {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  height: 80vh;
-  padding-top: 25vh;
-  box-shadow: inset 0px 10000px 1000px rgba(0, 0, 0, 0.25);
+  height: 600px;
+  
+}
+div#homeBack{
+  height:600px ;
+  background-color: rgba(0, 0, 0, 0.301);
+  padding-top: 250px;
 }
 section#home h1 {
   font-family: var(--font_destaque);
@@ -234,8 +239,10 @@ section#contato {
   background-size: cover;
   background-position: center center;
   height: 700px;
-  box-shadow: inset 1000px 110px 10000px rgba(0, 0, 0, 0.486);
-  overflow: hidden;
+}
+div#contatoBack{
+  height: 700px;
+  background-color: rgba(0, 0, 0, 0.308);
 }
 section div#contato-header{
   margin-bottom: 1rem;
@@ -379,15 +386,20 @@ footer a:focus {
   position: fixed;
   bottom: -50px;
   right: 30px;
-  padding: 10px 15px;
+  padding: 2.5px  5px;
   background-color: var(--marrom);
   color: white;
   border-radius: 50%;
   cursor: pointer;
- 
   opacity: 0;
   font-weight: bolder;
   transition: all 0.5s ease 0s;
+}
+span#top{
+  top: 1px;
+  position: relative;
+  font-size: 2rem;
+  font-weight: 800;
 }
 
 .scrollTop:active {
@@ -400,4 +412,7 @@ footer a:focus {
   bottom: 30px;
   transition: all 0.5s ease 0s;
 }
-/*-----------------------------*/
+/*----------Scroll reveal-------------------*/
+#contato{
+  visibility: hidden;
+}

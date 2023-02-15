@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
-    <title>Criatório Talizin</title>
+    
     <!--estilo para mobile first-->
     <link rel="stylesheet" href="estilos/style.css" />
     <link rel="stylesheet" href="estilos/media-querie.css" />
@@ -13,6 +13,9 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.js"></script>
+    <title>Criatório Talizin</title>
   </head>
   <!--colocar onresize="menu()"-->
   <body>
@@ -59,13 +62,15 @@
       <img id="logo" src="imagens/logo-canario.jpg" alt="logo_criatório" />
     </div>
     <!--home-->
-    <section id="home">
-      <h1>Home</h1>
+    <section  id="home" class="home">
+      <div id="homeBack">
+        <h1 class="rellax" data-rellax-speed="-1">Home</h1>
+      </div>
     </section>
     <main>
       <section id="desc">
-        <h2>Início do Criatório Talizin</h2>
-        <p>
+        <h2 class="rellax" data-rellax-speed="-0.3" >Início do Criatório Talizin</h2>
+        <p class="rellax" data-rellax-speed="-0.1">
           O criatório talizin começou em 1998, com a compra do 1º casal de
           canários de porte, e fui participando de torneios conseguindo alguns
           campeões, mas em 2005 comecei a estudar Administração de Empresas e
@@ -77,18 +82,18 @@
       </section>
       <!--foto da gaiola-->
       <section id="gaiola">
-        <img src="imagens/canario3.jpg" alt="canario" />
+        <img  src="imagens/canario3.jpg" alt="canario" />
       </section>
       <div id="c"></div>
       <section id="canarios">
-        <h2>Canários</h2>
+        <h2 >Canários</h2>
         <p>
           Hoje o criatório Talizin é especializado em canário
           <strong>Yorkshire</strong>.
         </p>
         <!--imagens dos canários-->
-        <span id="canarinho">
-          <img src="imagens/passaro1.jpg" alt="passaro" />
+        <span  id="canarinho">
+          <img  src="imagens/passaro1.jpg" alt="passaro" />
         </span>
         <span id="canarinho">
           <img src="imagens/passaro1.jpg" alt="passaro" />
@@ -109,30 +114,29 @@
     </main>
     <div id="co"></div>
     <section id="contato">
-      <div id="contato-header">
-        <h2>Contato</h2>
-      </div>
-      <div id="contato-body">
-        <ul id="lista_contato">
-          <li><a href="https://www.facebook.com/marcelo.talizinpires" target="_blank" rel="external">
-            <img src="imagens/face.png" alt="logo_face"><p>facebook</p>
-          </a>
-        </li>
-
-        <li>
-          <a href="https://www.instagram.com/marcelotalizin/" target="_blank" rel="external">
-            <img src="imagens/insta.png" alt="logo_insta"><p>instagram</p>
-          </a>
-        </li>
-
-        <li><a href="https://contate.me/marcelo-talizin" target="_blank" rel="external">
-            <img src="imagens/whats.png" alt="logo_whats">
-            <p>whatsapp</p>
-          </a>
-          
-        </li>
-
-        </ul>
+      <div id="contatoBack">
+        <div id="contato-header">
+          <h2>Contato</h2>
+        </div>
+        <div id="contato-body">
+          <ul id="lista_contato">
+            <li><a  href="https://www.facebook.com/marcelo.talizinpires" target="_blank" rel="external">
+              <img src="imagens/face.png" alt="logo_face"><p>facebook</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/marcelotalizin/" target="_blank" rel="external">
+              <img src="imagens/insta.png" alt="logo_insta"><p>instagram</p>
+            </a>
+          </li>
+          <li><a href="https://contate.me/marcelo-talizin" target="_blank" rel="external">
+              <img src="imagens/whats.png" alt="logo_whats">
+              <p>whatsapp</p>
+            </a>
+        
+          </li>
+          </ul>
+        </div>
       </div>
     </section>
     <footer id="rodape">
@@ -143,8 +147,12 @@
       onclick="scrollToTop()"
       class="scrollTop"
     >
-      ^
+    <span class="material-symbols-outlined" id="top">
+      expand_less
+      </span>
     </div>
+    <script src="scripts/scrollReveal.js"></script>
+    
     <script src="scripts/scrollTop.js"></script>
     <script src="scripts/nav.js"></script>
   </body>
