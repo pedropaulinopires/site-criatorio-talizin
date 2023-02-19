@@ -32,25 +32,24 @@
 
     <!--menu mobile-->
     <header  id="menu_mobile">
+        <div
+        onclick="clickMenu()" class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+   
       <div id="myNav" class="overlay">
-        <!--BOTÃO DE FECHAR -->
-        <!--colocar--><span id="closebnt" class="material-symbols-outlined" onclick="closeNav()">
-          close
-          </span>
-
         <menu class="overlay-content">
           <div id="optLandscape">
-            <a id="link" href="#h" onclick="closeNav()">Home</a></li>
-            <a id="link"  href="#c" onclick="closeNav()">Canários</a>
+            <a id="link" href="#h" onclick="clickMenu()">Home</a></li>
+            <a id="link"  href="#c" onclick="clickMenu()">Canários</a>
           </div>
-            <a id="link"  href="#co" onclick="closeNav()">Contato</a>
+            <a id="link"  href="#co" onclick="clickMenu()">Contato</a>
             <a id="link"  href="https://www.youtube.com/@marcelotalizin" target="_blank" rel="external" onclick="closeNav()">Canal</a>
         </menu>
         
       </div>
-      <span id="openbnt"  class="material-symbols-outlined" onclick="openNav()">
-        menu
-        </span>
     </header>
     <!--fim menu mobile-->
 

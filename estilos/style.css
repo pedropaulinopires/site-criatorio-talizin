@@ -52,42 +52,45 @@ header {
   width: 100%;
   z-index: 1;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.261);
+  padding-top:.6rem;
+  padding-bottom: .6rem;
 }
 
 img#logo {
   width: 160px;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 div#tela_grande {
   display: none;
 }
 
-div#mobile {
+div#mobile{
   text-align: center;
-  z-index: 9;
-}
-span#closebnt {
-  display: block;
-  color: var(--marrom);
-  font-size: 2.5em;
-  cursor: pointer;
 }
 
-span#closebnt:active {
-  color: #342f19;
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: var(--marrom);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8px;
+  transition: all 0.3s;
+}
+.mobile-menu:hover {
   cursor: pointer;
 }
-span#openbnt {
-  display: block;
-  color: var(--marrom);
-  cursor: pointer;
-  font-size: 2.5em;
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-7px, 7px);
 }
 
-span#openbnt:active {
-  color: #342f19;
-  cursor: pointer;
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-6px, -8px);
 }
 .overlay {
   width: 100%;
@@ -95,8 +98,7 @@ span#openbnt:active {
   background-color: var(--amarelo-escuro);
   z-index: 9;
   position: fixed;
-  left: 0;
-  top: 0;
+  top: 40px;
   overflow-y: hidden;
   transition: all 0.5s;
 }
@@ -113,22 +115,19 @@ span#openbnt:active {
 @media screen and (orientation: landscape) {
   .overlay a {
     padding-bottom: 15vh;
-
   }
   #optLandscape {
     display: block;
     float: left;
     margin-left: 15%;
   }
-  #optLandscape a{
+  #optLandscape a {
     display: block;
   }
-  .overlay-content{
+  .overlay-content {
     text-align: center;
     padding-top: 1rem;
   }
-
-  
 }
 
 .overlay a:active {
@@ -152,10 +151,9 @@ section#home {
   background-position: center center;
   background-repeat: no-repeat;
   height: 600px;
-  
 }
-div#homeBack{
-  height:600px ;
+div#homeBack {
+  height: 600px;
   background-color: rgba(0, 0, 0, 0.301);
   padding-top: 250px;
 }
@@ -240,11 +238,11 @@ section#contato {
   background-position: center center;
   height: 700px;
 }
-div#contatoBack{
+div#contatoBack {
   height: 700px;
   background-color: rgba(0, 0, 0, 0.308);
 }
-section div#contato-header{
+section div#contato-header {
   margin-bottom: 1rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid darkgray;
@@ -254,31 +252,30 @@ section#contato h2 {
   color: white;
   text-shadow: 0px 0px 10px black;
 }
-section div#contato-body img{
-  transition: all .3s;
+section div#contato-body img {
+  transition: all 0.3s;
 }
-section div#contato-body{
+section div#contato-body {
   display: block;
   padding: 1rem;
 }
 
-ul{
+ul {
   padding: 1rem;
   margin: 1rem;
   display: inline;
   text-align: center;
   list-style-type: none;
 }
-li{
+li {
   display: block;
   margin-bottom: 5rem;
-  
 }
-ul p{
+ul p {
   display: inline;
-  transition: all .3s;
+  transition: all 0.3s;
 }
-section div#contato-body a{
+section div#contato-body a {
   text-decoration: none;
   color: rgb(248, 248, 248);
   font-weight: 700;
@@ -286,25 +283,23 @@ section div#contato-body a{
   font-size: 1.2rem;
 }
 
-li img{
+li img {
   border-radius: 10px;
 }
 
-
 /*todos os hovers*/
-@media (hover:hover) and (pointer: fine) {
-
+@media (hover: hover) and (pointer: fine) {
   .scrollTop:hover {
-  transition: all 0.5s ease 0s;
-  background-color: var(--amarelo-claro);
-  color: var(--marrom);
-}
-  footer a:hover{
+    transition: all 0.5s ease 0s;
+    background-color: var(--amarelo-claro);
+    color: var(--marrom);
+  }
+  footer a:hover {
     color: #3d371c;
-    transition: all .3s;
+    transition: all 0.3s;
   }
 
-   a#link:hover {
+  a#link:hover {
     color: var(--marrom);
   }
 
@@ -314,9 +309,9 @@ li img{
     transition: 0.3s;
   }
 
-   ul#lista_contato a:hover{
+  ul#lista_contato a:hover {
     transform: translate(-5px);
-    transition: all .3s;
+    transition: all 0.3s;
   }
 
   a:hover,
@@ -335,9 +330,9 @@ li img{
     cursor: pointer;
   }
 
-  section#contato p:hover{
+  section#contato p:hover {
     color: var(--marrom);
-    transition: all .3s;
+    transition: all 0.3s;
   }
   .overlay a:hover,
   .overlay a:focus {
@@ -352,10 +347,11 @@ li img{
   }
 }
 
-a:active,section#contato p:active{
-    color: var(--marrom);
-    transition:all .3s;
-  }
+a:active,
+section#contato p:active {
+  color: var(--marrom);
+  transition: all 0.3s;
+}
 
 /*-----------------------------*/
 
@@ -367,7 +363,7 @@ footer {
   font-weight: bolder;
 }
 footer p {
-  font-size:1rem;
+  font-size: 1rem;
   margin-top: 0;
   text-indent: 0;
   text-align: center;
@@ -389,7 +385,7 @@ footer a:focus {
   position: fixed;
   bottom: -50px;
   right: 30px;
-  padding: 2.5px  5px;
+  padding: 2.5px 5px;
   background-color: var(--marrom);
   color: white;
   border-radius: 50%;
@@ -398,7 +394,7 @@ footer a:focus {
   font-weight: bolder;
   transition: all 0.5s ease 0s;
 }
-span#top{
+span#top {
   top: 1px;
   position: relative;
   font-size: 2rem;
@@ -415,4 +411,3 @@ span#top{
   bottom: 30px;
   transition: all 0.5s ease 0s;
 }
-
